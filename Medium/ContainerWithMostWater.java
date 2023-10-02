@@ -5,7 +5,6 @@ public class ContainerWithMostWater {
     }
 
     public static int maxArea(int[] height) {
-
         int i=0;
         int j= height.length - 1;
         int max = Integer.MIN_VALUE;
@@ -13,7 +12,7 @@ public class ContainerWithMostWater {
            int min = height[i] < height[j] ? height[i] : height[j];
            int distance = j -i; 
            int area = min *  distance;
-           max = Math.max(max, area);
+           max = max > area ? max : area;
            if(height[i] < height[j]) {
                 i++;
            }
