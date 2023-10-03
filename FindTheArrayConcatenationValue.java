@@ -1,3 +1,4 @@
+// duplicate
 public class FindTheArrayConcatenationValue {
 
 
