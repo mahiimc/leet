@@ -42,7 +42,7 @@ public class LinkedList {
     public void print(ListNode head) {
         ListNode curr = head;
         System.out.print("HEAD -> ");
-        while(curr.next != null) {
+        while(curr != null) {
             System.out.print(curr.val+" -> ");
             curr = curr.next;
         }
